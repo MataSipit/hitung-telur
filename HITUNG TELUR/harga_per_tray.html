@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harga Per Tray</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Informasi Harga Per Tray</h1>
+        <ul class="navbar-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="harga_per_butir.html">Harga per Butir</a></li>
+            <li><a href="pendapatan_per_tray.html">Pendapatan per Tray</a></li>
+            <li><a href="kondisi_harga.html">Kondisi Harga</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2>Harga Per Tray Telur</h2>
+        <p>Pilih jenis telur dan masukkan jumlah tray yang ingin Anda beli:</p>
+        <select id="jenisTelur">
+            <option value="47000">Telur Kecil - Rp 47,000 per tray</option>
+            <option value="50000">Telur Besar - Rp 50,000 per tray</option>
+        </select>
+        <input type="number" id="jumlahTray" placeholder="Jumlah Tray">
+        <button onclick="hitungBiayaTray()">Hitung Biaya</button>
+        <p>Total Biaya: Rp <span id="totalBiayaTray">0</span></p>
+    </div>
+
+    <script>
+    function hitungBiayaTray() {
+        var hargaPerTray = parseInt(document.getElementById('jenisTelur').value);
+        var jumlahTray = document.getElementById('jumlahTray').value;
+        var totalBiaya = jumlahTray * hargaPerTray;
+        document.getElementById('totalBiayaTray').innerText = totalBiaya;
+    }
+    </script>
+</body>
+</html>

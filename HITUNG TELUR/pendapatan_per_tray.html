@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendapatan Per Tray</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Informasi Pendapatan Per Tray</h1>
+        <ul class="navbar-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="harga_per_butir.html">Harga per Butir</a></li>
+            <li><a href="harga_per_tray.html">Harga per Tray</a></li>
+            <li><a href="kondisi_harga.html">Kondisi Harga</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2>Pendapatan Per Tray Telur</h2>
+        <p>Masukkan harga jual dan biaya produksi per tray:</p>
+        <input type="number" id="hargaJualPerTray" placeholder="Harga Jual per Tray">
+        <input type="number" id="biayaProduksiPerTray" placeholder="Biaya Produksi per Tray">
+        <button onclick="hitungPendapatanTray()">Hitung Pendapatan</button>
+        <p>Pendapatan: Rp <span id="pendapatanTray">0</span></p>
+    </div>
+
+    <script>
+    function hitungPendapatanTray() {
+        var hargaJualPerTray = document.getElementById('hargaJualPerTray').value;
+        var biayaProduksiPerTray = document.getElementById('biayaProduksiPerTray').value;
+        var pendapatan = hargaJualPerTray - biayaProduksiPerTray;
+        document.getElementById('pendapatanTray').innerText = pendapatan;
+    }
+    </script>
+</body>
+</html>
+```

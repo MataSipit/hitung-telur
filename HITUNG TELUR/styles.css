@@ -1,0 +1,26 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; box-sizing: border-box; }
+.navbar { background-color: #007BFF; color: white; padding: 10px 20px; text-align: center; }
+.navbar-links { list-style: none; padding: 0; }
+.navbar-links li { display: inline; margin-right: 10px; }
+.navbar-links a { color: white; text-decoration: none; }
+.container { padding: 20px; text-align: center; }
+.swiper-slide img {
+    display: none; /* Menyembunyikan gambar dalam galeri */
+}
+
+.swiper-container {
+    display: none; /* Menyembunyikan seluruh galeri */
+}
+
+/* Responsif untuk tablet */
+@media (max-width: 768px) {
+    .navbar-links li { display: block; margin-bottom: 10px; }
+    .navbar-links { text-align: center; }
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 480px) {
+    .navbar { padding: 10px; }
+    .navbar-links li { display: block; margin: 10px 0; }
+    .container { padding: 10px; }
+}

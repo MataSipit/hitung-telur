@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AL AYYAMI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>YUNATARA EGGS</h1>
+        <ul class="navbar-links">
+            <li><a href="harga_per_butir.html">Harga per Butir</a></li>
+            <li><a href="harga_per_tray.html">Harga per Tray</a></li>
+            <li><a href="pendapatan_per_tray.html">Pendapatan per Tray</a></li>
+            <li><a href="kondisi_harga.html">Kondisi Harga</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <p>Selamat datang di Kalkulator Pendapatan Penjualan Telur. Silakan pilih opsi di navbar untuk informasi lebih lanjut.</p>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="1.png" alt="Foto 1"></div>
+                <div class="swiper-slide"><img src="2.png" alt="Foto 2"></div>
+                <div class="swiper-slide"><img src="3.jpeg" alt="Foto 3"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        effect: 'cube',
+        grabCursor: true,
+        cubeEffect: {
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.94,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    </script>
+</body>
+</html>
